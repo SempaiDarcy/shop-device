@@ -1,12 +1,10 @@
-import React from 'react';
-
 export const Card = ({
                          img, name, brand,
                          rating,
-                         price
+                         price,
                      }) => {
     return (
-        <div className='card'>
+        <div className='card-component'>
             <div>
                 <img src={img} width='150px' alt="здесь фото"/>
             </div>

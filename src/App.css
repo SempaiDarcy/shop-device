@@ -8,23 +8,28 @@
     align-items: center;
 }
 
+.header input {
+    width: 800px;
+    height: 33px;
+}
+
 .card-block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
 }
 
-.card {
+.card-component {
     box-shadow: 3px 3px 3px 3px gray;
     margin: 20px;
     padding: 10px;
     width: 250px;
     height: 300px;
+}
 
-    .info {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
+.card-component .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

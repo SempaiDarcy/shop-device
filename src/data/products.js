@@ -46,5 +46,21 @@ export const products = [
         category: 'phone',
         rating: 5,
         img: 'https://m.media-amazon.com/images/I/71d5fMDvq9L._AC_SL1500_.jpg'
-    }
+    },
+    {
+        brand: 'apple',
+        name: 'Apple MacBook Pro 14',
+        price: 2000,
+        category: 'laptop',
+        rating: 5,
+        img: 'https://m.media-amazon.com/images/I/61Y30DpqRVL._AC_SL1500_.jpg'
+    },
+    {
+        brand: 'apple',
+        name: 'Apple iPad Pro 12.9',
+        price: 1100,
+        category: 'tablet',
+        rating: 5,
+        img: 'https://m.media-amazon.com/images/I/81gC7frRJyL._AC_SL1500_.jpg'
+    },
 ];

@@ -1,23 +1,21 @@
 import './App.css'
 import {products} from './data/products'
-import {Card} from "./Components/Card";
+import {Card} from "./Components/Card/Card";
+import {Header} from "./Components/Header/Header";
+import {useState} from "react";
 
 function App() {
-
+    const [inputName, setInputName] = useState('')
+    const filteredProducts = inputName ? products.filter(el => el.brand === inputName) : products;
+    const handleInput = (text) => {
+        console.log(text)
+        setInputName(text)
+    }
     return (
         <div>
-            <div className='header'>
-                <div>
-                    <img
-                        width={'60px'}
-                        src='https://static.vecteezy.com/system/resources/previews/026/109/507/non_2x/smartphone-logo-modern-electronics-smartphone-shop-design-electronic-goods-free-vector.jpg'
-                        alt="photo"
-                    />
-                </div>
-                <div>header</div>
-            </div>
+            <Header handleInput={handleInput}/>
             <div className="card-block">
-                {products.map((el, index) =>
+                {filteredProducts.map((el, index) =>
                     <Card
                         key={index}
                         img={el.img}
