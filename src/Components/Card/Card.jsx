@@ -1,3 +1,5 @@
+import './Card.css'
+
 export const Card = ({
                          img, name, brand,
                          rating,
@@ -10,7 +12,7 @@ export const Card = ({
             </div>
             <div className='info'>
                 <div>Name: {name}</div>
-                <div>Brand: {brand}</div>
+                <h3>Brand: {brand}</h3>
                 <div>Rating: {rating}</div>
                 <h3>{price}</h3>
             </div>
